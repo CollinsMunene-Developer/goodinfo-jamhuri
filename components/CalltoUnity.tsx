@@ -1,6 +1,9 @@
 import React from 'react';
 
 const CalltoUnity = () => {
+  // Link to YouTube
+  const youtubeLink = "https://youtu.be/rnyxMXqNl68";
+
   return (
     <div className="w-full bg-gradient-to-r from-yellow-500 via-orange-600 to-red-600 py-16 px-4 text-white">
       <div className="text-center">
@@ -13,9 +16,14 @@ const CalltoUnity = () => {
         <p className="mt-4 text-lg md:text-xl">
           Today, let us celebrate not only our independence but also our shared identity, resilience, and future.
         </p>
-        <button className="mt-8 px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition">
+        <a
+          href={youtubeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition"
+        >
           Join the Celebration
-        </button>
+        </a>
       </div>
     </div>
   );
